@@ -1,0 +1,247 @@
+/*版心部分*/
+body {
+    font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1", arial;
+    background-color: #CCCCCC;
+}
+
+.center {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*新闻盒子*/
+.containerBox .newsBox {
+    width: 355px;
+    height: 260px;
+    background-color: #FFF;
+    margin-right: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/*新闻tab栏*/
+/*.newsBox_header{
+    margin-left: 20px;
+}*/
+.newsBox_header li {
+    float: left;
+
+}
+
+.newsBox_header li a {
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    /*background-color: blue;*/
+    color: #414242;
+    text-align: center;
+}
+
+.newsBox_header .activeNews {
+    color:#FF8F17;
+}
+.newsBox_header .newMore1{
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    color: #56CEB4;
+    font-size: 18px;
+}
+.newsBox_header .newsMore {
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    color: #B9C1C1;
+}
+.newsBox_header .newsMore:hover {
+    color: #FF8F17;
+}
+/*滚动条*/
+.boo {
+    height: 1px;
+    background-color: #E9EEED;
+    position: relative;
+}
+
+.boo-line {
+    width: 50px;
+    height: 2px;
+    background-color: #FF8F17;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+.boo-line1 {
+    width: 50px;
+    height: 2px;
+    background-color:#FF8F17;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+
+/*新闻内容*/
+.newsBody {
+    width: 5000px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.newsBody ul {
+    margin-right: 30px;
+}
+
+.newsBody li {
+    /*padding: 5px;*/
+    width: 352px;
+}
+.newsBody li a:hover {
+    color: #2FC3A2;
+}
+.newsBody span ,.newsBody .newsClass{
+    color: #838383;
+}
+.newsBody a {
+    display: inline-block;
+}
+.newsBody .newsContent{
+    width: 263px;
+    margin-left: 40px;
+    position: relative;
+    display: block;
+    z-index: 2;
+    color: #505050;
+    padding: 3px 50px 3px 0;
+    /*不换行与隐藏*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.newsBody .newsClass:hover {
+    color: #838383;
+    text-decoration: underline;
+}
+.newsBody .newsLi {
+    position: relative;
+    height: 27px;
+    line-height: 33px;
+}
+.newsBody .newsLi span {
+    position: absolute;
+    top:3px;
+    right: 0px;
+}
+.newsBody .newsClass {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+/*活动中心*/
+.containerBox .activityBox {
+    width: 350px;
+    height: 260px;
+    background-color: #FFF;
+    margin-right: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+.activityBox_header li {
+    float: left;
+
+}
+
+.activityBox_header li a {
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    /*background-color: blue;*/
+    color: #414242;
+    text-align: center;
+}
+
+.activityBox_header .activeNews {
+    color: #FF8F17;
+}
+.activityBox_header .newMore1{
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    color:#56CEB4;
+    font-size: 18px;
+}
+.activityBox_header .newsMore {
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    color: #B9C1C1;
+}
+.activityBox_header .newsMore:hover {
+    color: #FF8F17;
+}
+/*滚动条*/
+.activityBox_header .boo {
+    height: 1px;
+    background-color: #E9EEED;
+    position: relative;
+}
+
+.activityBox_header .boo-line {
+    width: 50px;
+    height: 2px;
+    background-color: #FF8F17;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+
+
+/*职业介绍*/
+.containerBox .professionBox {
+    width: 264px;
+    height: 300px;
+}
+
+.show-news-bottom{
+    width: 1079px;
+    height: 135px;
+    margin-top: 15px;
+}
+.margin-right{
+    margin-right: 14px;
+}
+.fl-li{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, section {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+#header ul a {
+    text-decoration: none;
+}
+
+/*a:hover {*/
+    /*color: #C81623;*/
+    /*text-decoration: none;*/
+/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.sider {
+    width: 186px;
+    position: absolute;
+
+    /*顶部*/
+}
+
+.sidertop {
+    position: relative;
+    background-color: green;
+    height: 300px;
+}
+
+.sider-title {
+    background-color: #199d80;
+
+}
+
+.sider-title .sidertop-one {
+    height: 115px;
+    background-color: #2fc3a2;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sidertop-one a {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 45px;
+    top: 40px;
+    color: white;
+
+}
+.pop{
+    cursor: pointer;
+}
+
+.sidertop-oneicon {
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    left: 7px;
+    color: #1d997e;
+}
+
+.sidertop-two {
+
+    height: 61px;
+    line-height: 61px;
+    width: 186px;
+    display: block;
+
+}
+
+.sidertop-two a {
+
+    color: #fff;
+    margin-left: 45px;
+    position: relative;
+    font-size: 15px;
+}
+
+.sidertop-twoicon {
+
+    position: relative;
+    left: -7px;
+}
+
+.sidertop-three {
+    height: 61px;
+    line-height: 61px;
+    width: 186px;
+}
+
+.sidertop-three a {
+
+    color: #fff;
+    position: relative;
+    font-size: 15px;
+
+    margin-left: 45px;
+}
+
+.sidertop-threeicon {
+    position: relative;
+    left: -7px;
+
+}
+
+.sidertop-four {
+
+    height: 61px;
+    line-height: 61px;
+    width: 186px;
+
+}
+
+.sidertop-four a {
+
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    margin-left: 45px;
+}
+
+.sidertop-fouricon {
+    left: -7px;
+    position: relative;
+
+}
+
+/*中间*/
+.sidermiddle {
+    background-color: #3a3a3a;
+    width: 185px;
+    height: 300px;
+    margin: 15px 8px 15px 7px;
+}
+.qnav1{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+.qnav1 .qnavr{
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    font-size: 13px;
+    display: block;
+
+}
+.qnav1 a{
+    position: absolute;
+    top: 67px;
+    left: 25px;
+    color: #D4D4D4;
+}
+/*底部*/
+.siderbottom {
+    width: 155px;
+    height: 728px;
+    /*background-color: pink;*/
+
+}
+.others{
+    background: #3a3a3a;
+    /*margin: 15px 0 0;*/
+    padding:  15px;
+    font-size: 13px;
+    margin-left: 7px;
+}
+.qnvabottom{
+    position: relative;
+    border-bottom: 1px solid #474747;
+    overflow: hidden;
+    line-height: 41px;
+    height: 41px;
+    opacity: 0.8;
+}
+.bottomicon{
+    position: absolute;
+    display: block;
+    color: #cfae69;
+    left: 30px;
+    font-size: 30px;
+}
+.qnvabottom a{
+    position: relative;
+    display: block;
+    color: #d4d4d4;
+    height: 100%;
+    text-align: center;
+    text-indent: 35px;
+}
+
+.erwei{
+    position: relative;
+    margin: 25px 0 0;
+    padding: 30px 13px 0;
+    color: #9c9c9c;
+}
+.erwei .erweia{
+
+}
+.erwei .erweib{
+    position: absolute;
+    top: 0;
+    line-height: 18px;
+    height: 18px;
+    text-align: center;
+    padding: 0 0 0 8px;
+    cursor: pointer;
+}
+.pic1{
+    display: block;
+    
+}
+.wxwx{
+    right: 17px;
+    border-left: 1px solid #676767;
+}
+.pic2{
+    display: none;
+}
+/*链接*/
+.partners{
+    padding: 0 13px;
+    margin: 5px 0 0;
+}
+.partnerlist{
+    position: relative;
+    margin: 0 0 0 -12px;
+    overflow: hidden;
+}
+.partnerlist li{
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 15px 0 0 12px;
+    opacity: 0.6;
+}

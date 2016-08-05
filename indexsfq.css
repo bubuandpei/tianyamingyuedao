@@ -1,0 +1,438 @@
+/*初始化*/
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*手风琴部分start*/
+.shoufengqin{
+    width: 100%;
+    height: 603px;
+    background:url("imgs/bg-2.jpg") no-repeat ;
+    overflow: hidden;
+}
+/*标题部分start*/
+.shoufengqin .sfqtitle{
+    margin-top: 50px;
+    width: 300px;
+    margin-left: 170px;
+    margin-top: 50px;
+    /*background-color: saddlebrown;*/
+}
+.shoufengqin .sfqtitle p{
+    font-size: 16px;
+    color: #363839;
+    margin-bottom: 5px;
+}
+.shoufengqin .sfqtitle span{
+    color: white;
+    margin-right: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Microsoft YaHei", simSun, "Lucida Grande", "Lucida Sans Unicode", Arial;
+}
+.shoufengqin .sfqtitle .gyzz{
+    color: #CFAE69;
+}
+/*标题部分end*/
+
+/*手风琴列表start*/
+#sfqlist {
+    width: 1032px;
+    height: 348px;
+    /*margin-left: 170px;*/
+    margin: 0 auto;
+    margin-top: 55px;
+
+}
+
+#sfqlist  .box {
+    width: 622px;
+    height: 350px;
+    background: url("imgs/bg-uts.jpg") no-repeat;
+    position: relative;
+    float: left;
+    display: none;
+}
+
+#sfqlist .img {
+    width: 418px;
+    height: 422px;
+    position: absolute;
+    top: -75px;
+    left: 164px;
+
+}
+
+#sfqlist .box h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #CFAE69;
+    padding-top: 48px;
+    margin-left: 50px;
+    float: left;
+}
+
+#sfqlist .box i {
+    /*background: url("imgs/spr-2.png") no-repeat -215px -27px;*/
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 150px;
+}
+
+
+#sfqlist .enterbox {
+    width: 63px;
+    height: 350px;
+    /*background-color: #29373A;*/
+    position: relative;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    /*display:none;*/
+}
+
+/*#sfqlist   .enterbox img {*/
+    /*position: absolute;*/
+    /*top: 81px;*/
+    /*left: -95px;*/
+/*}*/
+#sfqlist .enterbox i{
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 14px;
+}
+/*//小盒子内的图标和背景颜色start*/
+/*第一个背景图片和图标*/
+#sfqlist .box1 i{
+    background: url("imgs/spr-2.png") no-repeat -86px -27px;
+}
+
+/*第二个背景图片和图标*/
+#sfqlist .box2 i{
+    background: url("imgs/spr-2.png") no-repeat -43px -27px;
+}
+
+/*第三个背景图片和图标*/
+#sfqlist .box3 i{
+    background: url("imgs/spr-2.png") no-repeat -215px -27px;
+}
+
+/*第四个背景图片和图标*/
+#sfqlist .box4 i{
+    background: url("imgs/spr-2.png") no-repeat -258px -27px;
+}
+
+/*第五个背景图片和图标*/
+#sfqlist .box5 i{
+    background: url("imgs/spr-2.png") no-repeat -172px -27px;
+}
+#sfqlist .enbox5{
+    background-color: #2F2530;
+}
+/*第六个背景图片和图标*/
+#sfqlist .box6 i{
+    background: url("imgs/spr-2.png") no-repeat 0px -27px;
+}
+
+/*第七个背景图片和图标*/
+#sfqlist .box7 i{
+    background: url("imgs/spr-2.png") no-repeat -129px -27px;
+}
+
+/*//小盒子内的图标和背景颜色end*/
+
+
+/*//默认状态下，显示最后一个盒子*/
+#sfqlist #lastenter{
+    display: none;
+}
+#sfqlist  #lastbox{
+    display: inline-block;
+}
+
+/*每个大盒子内的内容*/
+#sfqlist .box p {
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 16px;
+    color: #2FC3A2;
+}
+
+#sfqlist .box span {
+    display: block;
+    width: 300px;
+    height: 18px;
+    margin-left: 50px;
+    color: #B7B7B7;
+}
+#sfqlist .box h4{
+    margin-left: 50px;
+    margin-top: 100px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+/*操作难度的等级*/
+#sfqlist .box ul{
+    margin-left: 50px;
+    width: 130px;
+}
+#sfqlist .box li{
+    width: 19px;
+    height: 16px;
+    background: url("imgs/spr-2.png") no-repeat 0 0;
+    float: left;
+    margin-right: 4px;
+    margin-top: 10px;
+}
+
+/*操作难度最后的小方块*/
+#sfqlist .box .lastli{
+    background: url("imgs/spr-2.png") no-repeat -25px 0;
+}
+
+/*底部的查看更多*/
+#sfqlist .box .more{
+    width: 91px;
+    height: 28px;
+    background-color: #CFAE69;
+    margin-top: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font:  700 14px/28px "mircosoft yahei" ;
+}
+#sfqlist a:hover{
+    color: white;
+}
+
+
+/*手风琴列表end*/
+
+/*手风琴部分end*/
+
+/*<!--手风琴foot部分start-->*/
+#sfqfoot{
+    height: 654px;
+    width: 100%;
+    background: url("imgs/p-foot1.jpg") no-repeat  center -325px;
+}
+
+/*#sfqfoot div{*/
+    /*width: 495px;*/
+    /*height: 135px;*/
+    /*float: left;*/
+    /*margin-top: 90px;*/
+    /*text-align: center;*/
+    /*margin-bottom: 15px;*/
+
+/*}*/
+#sfqfoot #allbox1{
+    width: 1010px;
+    height: 135px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+#sfqfoot span {
+    font-size: 40px;
+    display: block;
+    height: 135px;
+    line-height: 135px;
+
+}
+#sfqfoot span a{
+    color: #fff;
+}
+#sfqfoot .entergw{
+    background-color:#2fc3a3;
+    /*margin-right: 10px;*/
+    /*margin-left: 165px;*/
+    position: relative;
+    height: 135px;
+    width: 495px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    /*float: left;*/
+}
+#sfqfoot .entergw i{
+    width: 61px;
+    height: 59px;
+    display: block;
+    background: url("imgs/spr-c.png") no-repeat 0 -2px;
+    position: absolute;
+    top: 35px;
+    left: 80px;
+}
+
+#sfqfoot .downgame {
+    background-color: #CFAE69;
+    position: relative;
+    height: 135px;
+    width: 495px;
+    text-align: center;
+    float: left;
+}
+#sfqfoot .downgame i{
+    width: 70px;
+    height: 59px;
+    display: block;
+    background: url("imgs/spr-c.png") no-repeat -97px 0;
+    position: absolute;
+    top: 35px;
+    left: 80px;
+}
+#sfqfoot .sfqguide{
+    /*margin-left: 170px;*/
+    height: 90px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#sfqfoot .sfqguide li{
+    float: left;
+    width: 240px;
+    height: 90px;
+    background-color: #2C2C2C;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 24px;
+}
+#sfqfoot .sfqguide li:hover{
+    background-color:#262626;
+}
+#sfqfoot .sfqguide a{
+    color: #fff;
+}
+
+#sfqfoot #allbox{
+    width: 999px;
+    height: 135px;
+}
+
+/*<!--手风琴foot部分end-->*/
+
+/*<!--手风琴buttom部分start-->*/
+.sfqbuttom{
+    height: 120px;
+    background-color: #202020;
+}
+.sfqbuttom .friendlink {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+.sfqbuttom p{
+    width: 484px;
+    margin: 0 auto;
+}
+.sfqbuttom .copyright{
+    width: 132px;
+    margin: 0 auto;
+}
+
+.sfqbuttom span a{
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: url("imgs/spr-c.png") no-repeat 0 -230px;
+    position: fixed;
+    bottom: 90px;
+    right: 0;
+}
+.sfqbuttom .friendlink a:hover,.sfqbuttom  p a:hover{
+    color: white;
+}
+/*<!--手风琴buttom部分end-->*/

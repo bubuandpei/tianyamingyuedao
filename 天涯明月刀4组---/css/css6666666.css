@@ -1,0 +1,413 @@
+/*版心部分*/
+body {
+    font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1", arial; !important;
+    background-color: #CCCCCC;
+}
+.home .containerBox {
+    margin-top: 15px;
+}
+.center {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*新闻盒子*/
+.containerBox .newsBox {
+    width: 355px;
+    height: 260px;
+    background-color: #FFF;
+    margin-right: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/*新闻tab栏*/
+.newsBox_header li {
+    float: left;
+
+}
+
+.newsBox_header li a {
+    display: inline-block;
+    width: 60px;
+    height: 43px;
+    line-height: 43px;
+    /*background-color: blue;*/
+    color: #414242;
+    text-align: center;
+    font-size: 14px;
+}
+
+.newsBox_header .activeNews {
+    color: #2FC3A2;
+    font-size: 20px;
+}
+
+.newsBox_header .newsMore {
+    display: inline-block;
+    width: 50px;
+    height: 43px;
+    line-height: 43px;
+    color: #B9C1C1;
+}
+.newsBox_header .newsMore:hover {
+    color: #2FC3A2;
+}
+/*滚动条*/
+.newsBox .boo {
+    height: 1px;
+    background-color: #E9EEED;
+    position: relative;
+}
+
+.newsBox .boo-line {
+    width: 60px;
+    height: 2px;
+    background-color: #2FC3A2;
+    position: absolute;
+    bottom: 0;
+}
+
+/*新闻内容*/
+.newsBody {
+    width: 5000px;
+    margin-top: 10px;
+    position: relative;
+}
+.newsBody ul {
+    margin-right: 30px;
+}
+.newsBody li {
+    /*padding: 5px;*/
+    width: 352px;
+}
+.newsBody li a:hover {
+    color: #2FC3A2;
+}
+.newsBody span ,.newsBody .newsClass{
+    color: #838383;
+}
+.newsBody a {
+    display: inline-block;
+}
+.newsBody .newsContent{
+    width: 263px;
+    margin-left: 40px;
+    position: relative;
+    display: block;
+    z-index: 2;
+    color: #505050;
+    padding: 3px 50px 3px 0;
+    /*不换行与隐藏*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+}
+.newsBody .newsClass:hover {
+    color: #838383;
+    text-decoration: underline;
+}
+.newsBody .newsLi {
+    position: relative;
+    height: 27px;
+    line-height: 33px;
+}
+.newsBody .newsLi span {
+    position: absolute;
+    top:3px;
+    right: 0px;
+}
+.newsBody .newsClass {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+/*活动中心*/
+.containerBox .activityBox {
+    width: 390px;
+    height: 300px;
+    /*background-color: lime;*/
+    margin-right: 15px;
+
+}
+.activityBox .activityUp img{
+    width: 390px;
+}
+.activityBox .activityDown {
+    margin-top: 18px;
+
+}
+.activityDown .activityDown-l {
+    width: 190px;
+    height: 140px;
+    background: url("../images/bg-home2.jpg") -450px 0 no-repeat;
+    position: relative;
+}
+.activityDown .actDesc {
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+.activityDown .actDesc h3 {
+    font-size: 22px;
+    color: #CFAE69;
+}
+.activityDown .actDesc p {
+    font-size: 11px;
+    color: #777676;
+}
+.activityDown .activityDown-r {
+    width: 190px;
+    height: 140px;
+    background: url("../images/bg-home2.jpg") -451px -158px no-repeat;
+    position: relative;
+}
+/*职业介绍*/
+.containerBox .professionBox {
+    width: 264px;
+    height: 300px;
+    background-color: lightblue;
+    background: url("../images/bg-home2.jpg") -186px 0px no-repeat;
+    overflow: hidden;
+}
+/*头部标签*/
+.professionBox .pro-tab {
+    height: 47px;
+    line-height: 47px;
+}
+.professionBox .pro-desc {
+    width: 200px;
+    height: 264px;
+    position: relative;
+
+    /*background-color: #CCCCCC;*/
+}
+.pro-tab-ul {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.pro-tab-ul li {
+    float: left;
+    margin-right: 5px;
+}
+.pro-tab-ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+
+.pro-tab-ul .pro-active1 {
+    background:url("../images/pre11.png");
+    z-index: 2;
+}
+.pro-tab-ul .pro-active2 {
+    background:url("../images/pre12.png");
+    z-index: 2;
+}
+.pro-tab-ul .pro-active3 {
+    background:url("../images/pre13.png");
+    z-index: 2;
+}
+.pro-tab-ul .pro-active4 {
+    background:url("../images/pre14.png");
+    z-index: 2;
+}
+.pro-tab-ul .pro-active5 {
+    background:url("../images/pre15.png");
+    z-index: 2;
+}
+.pro-tab-ul .pro-active6 {
+    background:url("../images/pre16.png");
+    z-index: 2;
+}
+.pro-tab-ul .pro-active7 {
+    background:url("../images/pre17.png");
+    z-index: 2;
+}
+
+/*职业展示*/
+.containerBox .descrip {
+    height: 250px;
+    margin-left: 20px;
+    position: absolute;
+    left: -200px;
+    top:0 ;
+    z-index: 2;
+}
+
+.containerBox .descrip h1 {
+    color: #2FC3A2;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: left;
+}
+.containerBox .descrip .mp-tw {
+    width: 150px;
+    font-size: 12px;
+    text-align: left;
+    color: #5d5d5d;
+    text-align: left;
+}
+.containerBox .descrip .mp-wp {
+    color: #777676;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.containerBox .descrip .mp-level {
+    color: #5D5D5D;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.containerBox .descrip .mp-pp {
+    color: #FF8F17;
+    font-size: 24px;
+    text-align: left;
+}
+.containerBox .descrip .xqjs {
+    background-color:#2FC3A2;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 20px;
+    left:-5px;
+    border-radius: 20px;
+
+}
+
+.containerBox .descrip .mpgl {
+    background-color:#2D2D2D;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 20px;
+    left:74px;
+    border-radius: 20px;
+}
+.containerBox .descrip .xqjs:hover,.descrip .mpgl:hover {
+    opacity: 0.8;
+}
+
+.pro-desc .pro-pic {
+    height: 266px;
+    width: 165px;
+    position: absolute;
+    top:-25px;
+    right:-230px;
+}
+/*第一次不点击*/
+.pro-desc .descrip1 {
+    left: 0px;
+    top:0 ;
+    z-index: 2;
+}
+.pro-desc .pro-pic1 {
+    right: -65px;
+    top:-25px ;
+}
+
+/*底部开始*/
+.fotterBox {
+    height: 195px;
+    margin-top: 20px;
+}
+
+.fotterBox-top {
+    height: 37px;
+    background-color: #1E2628;
+    text-align: center;
+}
+
+.fotterBox-top span {
+    font-size: 14px;
+    line-height: 37px;
+    color: #4F5F5F;
+}
+
+.fotterBox-bottom {
+    height: 158px;
+    background-color: #242F2F;
+}
+
+.fotterBox-bottom-txt {
+    width: 960px;
+    height: 158px;
+    margin: 0 auto;
+}
+
+.fotterBox-bottom .ico-one {
+    width: 172px;
+    height: 34px;
+    float: left;
+    background: url("../images/bottom.png") no-repeat -1518px -7px;
+    margin-top: 35px;
+}
+
+.fotterBox-bottom-txt .ico-one .tq {
+    width: 172px;
+    height: 34px;
+    display: block;
+    padding-left: 9999px;
+}
+
+.fotterBox-bottom .ico-two {
+    width: 92px;
+    height: 44px;
+    float: left;
+    background: url("../images/bottom.png") no-repeat -1696px 0;
+    margin-left: 12px;
+    margin-top: 35px;
+}
+
+.bottom-word {
+    float: left;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.bottom-word a {
+    text-decoration: none;
+    color: #596963;
+}
+
+.bottom-word a:hover {
+    text-decoration: underline;
+}
+
+.bottom-word p {
+    font-size: 12px;
+    color: #596963;
+    line-height: 18px;
+}
+
+.p-two .p-l {
+    float: left;
+}
+
+.p-two .p-r {
+    float: right;
+}
+
+.div {
+    clear: both;
+}
+
+/*底部结束*/
+.show-news-bottom ul  li  {
+    float: left;
+    margin-right: 11px;
+    margin-top: 5px;
+}
+.newsBox2,.activityBox2{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.professionBox2{
+    margin-top: 20px;
+}

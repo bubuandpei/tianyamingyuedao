@@ -1,0 +1,429 @@
+/*css初始化*/
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+    /*去掉边框*/
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白间隙*/
+select, input {
+    vertical-align: middle;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font:14px/1.5 "\5FAE\8F6F\96C5\9ED1";
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #01b8a9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*版心*/
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left
+}
+
+/*整体背景图*/
+.home {
+    width: 100%;
+    text-align: center;
+    background: url(../images/bg20160223.jpg) no-repeat 50% 0;
+    height: 2008px;
+    background-color: #E6EBEA
+}
+.w1 {
+    width: 1262px;
+    /*height: 1788px;*/
+    text-align: left;
+    overflow: hidden;
+}
+
+.logo {
+background: url(../images/nav-copy.png) no-repeat  ;
+    height: 68px;
+    width: 192px;
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    cursor: pointer;
+}
+.logo a {
+    display: block;
+    text-indent: -99999px;
+}
+div.slogn {
+    position: absolute;
+    top: 38px;
+    right: 0;
+}
+.head {
+    height: 380px;
+    position: relative;
+}
+.slogn span {
+    font-size: 8px;
+}
+.slogn dl {
+    width: 100px;
+    float: left;
+}
+.slogn dt {
+    font-weight: 700;
+    margin-bottom: 14px;
+
+}
+.slogn dd {
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+}
+.head .notelink {
+    height: 139px;
+    width: 365px;
+    background: url(../images/slogn20160530.png) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*信息部分*/
+div.content {
+    margin-top: 20px;
+}
+.content-left {
+    height: 300px;
+    width: 186px;
+    margin-right: 8px;
+    margin-left: 6px;
+}
+.content-left .content-l1 {
+    height: 117px;
+    width: 186px;
+    background-color: rgba(42,182,141,1);
+    position: relative;
+
+}
+.content-l1 a {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    display: block;
+    color: #FFFFFF;
+    height: 117px;
+    width: 186px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    background: url(../images/gmk1.png);
+    overflow: hidden;
+}
+.content-l1 a:hover{
+    background-color: #42C9AB;
+}
+.content-l1 em {
+    font-size: 16px;
+    color: #1d997e;
+    position: absolute;
+    bottom: 18px;
+    left: 45px;
+}
+.content-l1 span {
+    display: block;
+    margin-top: 40px;
+}
+.content-left .public {
+    height: 60px;
+    background-color: #199D80;
+    border-bottom: 1px solid #21A78A;
+    position: relative;
+}
+.public em {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+em.one {
+    width: 23px;
+    height: 20px;
+    background: url(../images/lw.png) no-repeat;
+}
+em.two {
+    width: 23px;
+    height: 23px;
+    background: url(../images/cz.png) no-repeat;
+}
+em.three {
+    width: 25px;
+    height: 20px;
+    background: url(../images/zn.png) no-repeat;
+}
+.public a {
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    height: 60px;
+    width: 186px;
+    font-weight: 700;
+}
+.public a:hover {
+    background-color: #2C8772;
+}
+
+/*轮播图*/
+.content .content-middle {
+    height: 300px;
+    width: 800px;
+    margin-right: 8px;
+}
+
+#box {
+    position: relative;
+}
+#box span {
+    position: absolute;
+}
+#left,#right {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(25,25,0,0.3);
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#left {
+    top: 135px;
+    left: 0;
+}
+#right {
+    right: 0;
+    top: 135px;
+}
+#top,#top1 {
+    height: 28px;
+    width: 76px;
+    background-color: rgba(25,25,0,0.5);
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+#top {
+    right: 78px;
+}
+
+#box {
+    overflow: hidden;
+}
+#box .screen {
+    /*overflow: hidden;*/
+    height: 300px;
+    width: 799px;
+    display: block;
+}
+#box ul {
+    width: 20000px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#box ul li {
+    float: left;
+    cursor: pointer;
+}
+#arr {
+    display: none;
+}
+
+.screen ol {
+    height: 36px;
+    width: 800px;
+    background-color: rgba(72,72,73,0.8);
+    position: absolute;
+    bottom: 0;
+}
+.screen ol li {
+    /*width: 114px;*/
+    height: 36px;
+    cursor: pointer;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-right: 32px;
+    float: left;
+}
+#box .screen1 {
+    height: 300px;
+    width: 800px;
+    overflow: hidden;
+    display: none;
+}
+.screen1 ol {
+    height: 36px;
+    width: 800px;
+    background-color: rgba(72,72,73,0.8);
+    position: absolute;
+    bottom: 0;
+}
+.screen1 ol li {
+    /*width: 114px;*/
+    height: 36px;
+    cursor: pointer;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-right: 32px;
+    float: left;
+}
+#inform .current {
+    background-color: rgba(47, 195, 163, 0.5);
+}
+/*右侧信息栏*/
+.content-right {
+    height: 300px;
+    width: 265px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.content-right .content-r1{
+    /*height: 62px;*/
+    position: relative;
+    margin-top: 28px;
+}
+.content-r1  em{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    height: 34px;
+    width: 34px;
+    background: url(../images/spr-icon.png) no-repeat -134px 0;
+
+}
+.content-r1 span {
+    font-size: 14px;
+    padding-left: 60px;
+}
+.content-r1 p {
+    font-size: 18px;
+    color: #2FC3A3;
+    padding-left: 60px;
+}
+.content-r2 img {
+    vertical-align: middle;
+    margin: 12px 4px;
+    cursor: pointer;
+}
+.content-r2 .m-img1{
+    width: 228px;
+    height: 101px;
+    box-shadow: 2px 2px 2px 2px #666;
+}
+.content-r3 li {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.content-r3 {
+    margin-left: 15px;
+    text-align: left;
+    width: 232px;
+}

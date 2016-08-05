@@ -1,0 +1,628 @@
+@charset "UTF-8";
+/*css 初始化 */
+
+/*@font-face {*/
+    /*font-family: 'iconfont';*/
+    /*src: url('../font/iconfont.eot'); /!* IE9*!/*/
+    /*src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /!* IE6-IE8 *!/ url('../font/iconfont.woff') format('woff'), /!* chrome、firefox *!/ url('../font/iconfont.ttf') format('truetype'), /!* chrome、firefox、opera、Safari, Android, iOS 4.2+*!/ url('../font/iconfont.svg#iconfont') format('svg'); /!* iOS 4.1- *!/*/
+/*}*/
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东色*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*开始*/
+
+.bigPicture {
+    width: 100%; /*此处100%*/
+    height: 1124px;
+    background: url("imgs/bg20160527.jpg") no-repeat center center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/*六边形视频图*/
+.diamond {
+    position: absolute;
+    width: 136px; /*此处100%*/
+    height: 118px;
+    left: 460px;
+    top: 280px;
+    background: url("imgs/v.gif") no-repeat;
+}
+
+/*陌上花又开图片*/
+.middlePic {
+    width: 600px;
+    height: 330px; /*此处图片为470px*/
+    position: absolute;
+    /*margin-top: 130px;*/
+    left: 650px;
+    /*margin: 0 auto;*/
+    top: 130px;
+    background: url("imgs/spr-h.png") no-repeat;
+}
+
+/*天涯明月刀logo图*/
+.knifePic {
+    width: 162px;
+    height: 60px; /*此处图片为470px*/
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    background: url("imgs/spr-h.png") no-repeat -654px 0;
+}
+
+/*进入官网*/
+.enterSite {
+    width: 255px;
+    height: 100px;
+    position: absolute;
+    left: 450px;
+    top: 460px;
+    background-color: #2FC3A3;
+    text-decoration: none;
+    text-align: center;
+    background: url("imgs/gmk.png") no-repeat -38px -190px;
+    /*overflow: hidden;*/
+    /*float: left;*/
+}
+/*.boxall{*/
+    /*width: 1000px;*/
+    /*height: 100px;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+.enter1 {
+    padding-top: 32px;
+    display: block;
+    font-size: 28px;
+    color: #FFF;
+}
+
+.enter1:hover {
+    color: green;
+}
+
+.enter2 {
+    font-size: 8px;
+    color: #2BA68B;
+    display: block;
+    margin-top: 5px;
+}
+
+/*进入官网结束*/
+
+/*下载客户端*/
+.enterDownload {
+    width: 255px;
+    height: 100px;
+    position: absolute;
+    left: 795px;
+    top: 460px;
+    background-color: #CFAE69;
+    text-decoration: none;
+    text-align: center;
+    background: url("imgs/gmk.png") no-repeat -38px -190px;
+    float: left;
+    /*overflow: hidden;*/
+}
+
+.downloadTop {
+    width: 255px;
+    height: 100px;
+    /*float: left;*/
+    display: none;
+    background-color: #353535;
+}
+
+.downloadTop .allDownload {
+    width: 76px;
+    height: 84px;
+    display: block;
+    /*margin-left: 10px;*/
+    margin-top: 6px;
+    /*border-left: 1px dashed #868686;*/
+
+    /*background-color: #2C2C2C;*/
+    float: left;
+}
+
+.allDownload .allPic {
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    background: url("imgs/mt-2.png") no-repeat center center;
+}
+
+.allDownload span {
+    float: left;
+    margin-top: 3px;
+    margin-left: 25px;
+    color: #CDCAC5;
+    font-size: 13px;
+}
+
+.downloadTop .qqDownload {
+    width: 76px;
+    height: 84px;
+    display: block;
+    /*margin-left: 80px;*/
+    margin-top: 8px;
+    border-left: 1px dashed #868686;
+    /*background: url("imgs/mt-1.png") no-repeat center center;*/
+    background-color: #2C2C2C;
+    float: left;
+}
+
+.qqDownload .VipPic {
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    background: url("imgs/mt-1.png") no-repeat center center;
+}
+
+.qqDownload span {
+    float: left;
+    margin-left: 25px;
+    margin-top: 3px;
+    color: #CFAE69;
+    font-size: 13px;
+
+}
+
+.downloadDown {
+    width: 255px;
+    height: 100px;
+    background-color: #2FC3A3;
+    text-decoration: none;
+    text-align: center;
+    background: url("imgs/gmk.png") no-repeat -38px -190px;
+    /*float: left;*/
+}
+
+/*下载客户端结束*/
+
+/*三个图块*/
+.threepics {
+    width: 998px;
+    height: 280px;
+    /*position: absolute;*/
+    /*left: 175px;*/
+     /*top: 612px;*/
+    margin: 0 auto;
+    margin-top: 612px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.screen {
+    width: 312px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.screen li {
+    list-style: none;
+}
+
+/*新手礼包*/
+.threepics .newComerGift {
+    width: 312px;
+    height: 280px;
+    float: left;
+    background: url("imgs/1.jpg") no-repeat;
+}
+
+/*感恩回馈*/
+.threepics .thanksForGift {
+    width: 312px;
+    height: 280px;
+    float: left;
+    margin: 0 31px;
+    background: url("imgs/2.jpg") no-repeat;
+}
+
+/*轮播图特效*/
+
+.screen {
+    width: 312px;
+    height: 280px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.screen li {
+    width: 312px;
+    height: 280px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 3000px;
+}
+
+.threepics ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.threepics ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.threepics ol li.current {
+    background: yellow;
+}
+
+/*轮播特效结束*/
+
+/*商城上新*/
+.screen .newMarket {
+    width: 312px;
+    height: 280px;
+    float: left;
+    background: url("imgs/1465864710702922004.jpg") no-repeat;
+}
+
+/*有爱同人*/
+.screen .lovePeople {
+    width: 312px;
+    height: 280px;
+    float: left;
+    background: url("imgs/1465335456612601725.jpg") no-repeat;
+}
+
+/*江湖志*/
+.screen .riversLog {
+    width: 312px;
+    height: 280px;
+    float: left;
+    background: url("imgs/1465335510738048097.jpg") no-repeat;
+}
+
+/*抢先玩*/
+.screen .firstPlay {
+    width: 312px;
+    height: 280px;
+    float: left;
+    background: url("imgs/1465857704395858225.jpg") no-repeat;
+}
+
+/*四个小图块*/
+.fourpics {
+    width: 998px;
+    height: 105px;
+    /*margin-top: 30px;*/
+    /*position: absolute;*/
+    /*top: 906px; /!*此处应为920px,但是看着不好看*!/*/
+    /*left: 175px;*/
+    margin:0 auto;
+}
+
+/*新手指南*/
+/*游戏特色*/
+/*活动中心*/
+/*设定站*/
+.fourpics .newComerGuide, .gameCharacteristic, .activityCenter, .settingStation {
+    width: 233px;
+    height: 105px;
+    background-color: rgba(28, 28, 28, 1);
+    display: inline-block;
+    float: left;
+
+}
+
+/*新手指南*/
+/*游戏特色*/
+/*活动中心*/
+/*设定站*/
+.fourpics .newComerGuide:hover, .gameCharacteristic:hover, .activityCenter:hover, .settingStation:hover {
+    height: 103px;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 4px solid  #CFAE69;
+}
+
+/*新手指南文字部分*/
+.newComerGuide .characters {
+    width: 112px;
+    /*height: 39px;*/
+    margin-top: 20px;
+    margin-left: 24px;
+    float: left;
+}
+
+.characters .newCoGu1 {
+    font-size: 22px;
+    color: #CFAE69;
+    text-decoration: none;
+}
+
+.characters .newCoGu1:hover {
+    color: #FFF; /*此处只做了一个文字变色*/
+}
+
+.characters .newCoGu2 {
+    font-size: 12px;
+    display: inline-block;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+.diamondPic {
+    width: 18px;
+    height: 18px;
+    background: url("imgs/spr-h.png") -799px -257px;
+    margin-top: 6px;
+}
+
+/*所有小图标公共部分*/
+.newComerGuide,.gameCharacteristic,.activityCenter,.settingStation{
+    position: relative;
+}
+.fourpics .icon1, .icon2, .icon3, .icon4 {
+    width: 41px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    float: left;
+}
+
+/*新手指南小图标*/
+.newComerGuide .icon1 {
+    background: url("imgs/spr-h.png") no-repeat 0px -345px;
+}
+
+/*游戏特色*/
+.fourpics .gameCharacteristic, .activityCenter, .settingStation {
+    margin-left: 22px;
+}
+
+/*游戏特色文字部分*/
+.gameCharacteristic .characters2 {
+    width: 112px;
+    margin-top: 20px;
+    margin-left: 24px;
+    float: left;
+}
+
+.characters2 .gameCh1 {
+    font-size: 22px;
+    color: #CFAE69;
+    text-decoration: none;
+}
+
+.characters2 .gameCh1:hover {
+    color: #FFF;
+}
+
+.characters2 .gameCh2 {
+    font-size: 12px;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+/*游戏特色小图标*/
+.gameCharacteristic .icon2 {
+    background: url("imgs/spr-h.png") no-repeat -256px -345px;
+}
+
+/*活动中心*/
+
+/*活动中心文字部分*/
+.activityCenter .characters3 {
+    width: 128px;
+    /*height: 39px;*/
+    margin-top: 20px;
+    margin-left: 24px;
+    float: left;
+}
+
+.characters3 .activityCe1 {
+    font-size: 22px;
+    color: #CFAE69;
+    text-decoration: none;
+}
+
+.characters3 .activityCe1:hover {
+    color: #FFF;
+}
+
+.characters3 .activityCe2 {
+    font-size: 12px;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+/*活动中心小图标*/
+.activityCenter .icon3 {
+    background: url("imgs/spr-h.png") no-repeat -511px -345px;
+}
+
+/*设定站*/
+
+/*活动中心文字部分*/
+.settingStation .characters4 {
+    width: 112px;
+    /*height: 39px;*/
+    margin-top: 20px;
+    margin-left: 24px;
+    float: left;
+}
+
+.characters4 .settingSt1 {
+    font-size: 22px;
+    color: #CFAE69;
+    text-decoration: none;
+}
+
+.characters4 .settingSt1:hover {
+    color: #FFF;
+}
+
+.characters4 .settingSt2 {
+    font-size: 12px;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+/*活动中心小图标*/
+.settingStation .icon4 {
+    background: url("imgs/spr-h.png") no-repeat -767px -345px;
+}
+
+
+
+
+
+
+
+

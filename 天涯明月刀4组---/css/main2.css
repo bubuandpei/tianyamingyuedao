@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*主体2开始*/
+.main2Box {
+    width: 100%;
+    height: 514px;
+    background: url("images/bg2-20160419.jpg") no-repeat 50% 0;
+    overflow: hidden;
+}
+
+.main2 {
+    width: 999px;
+    height: 402px;
+    margin: 53px auto;
+}
+
+.main2 p {
+    color: #DFE5E4;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main2 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main2 .col1 {
+    color: #353535;
+}
+
+.main2 .col2 {
+    color: #2FC3A3;
+}
+
+.main2 .picsBox {
+    width: 999px;
+    height: 291px;
+    margin-top: 51px;
+}
+
+.picsBox div {
+    width: 333px;
+    height: 291px;
+    float: left;
+    position: absolute;
+}
+
+.picsBox .picBox1 {
+    background-image: url('images/pic-1.jpg');
+    position: relative;
+}
+
+.picsBox .picBox2 {
+    background-image: url('images/pic-2.jpg');
+    position: relative;
+}
+
+.picsBox .picBox3 {
+    background-image: url('images/pic-3.jpg');
+    position: relative;
+}
+
+.picsBox .base .pubi {
+    position: absolute;
+    width: 52px;
+    height: 53px;
+    display: inline-block;
+    background: url("images/spr-1.png") no-repeat -1px -1px;
+    left: 140px;
+    top: 66px;
+}
+
+.picsBox .base .p1 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 136px;
+}
+
+.picsBox .base .p2 {
+    font-size: 16px;
+    margin-top: 9px;
+    text-align: center;
+}
+
+.picsBox .base .p3 {
+    width: 80px;
+    height: 24px;
+    border-radius: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #3ED2B2;
+    margin-top: 18px;
+    margin-left: 126px;
+}
+
+.picsBox .base .i2 {
+    background: url("images/spr-1.png") no-repeat -1px -54px;
+}
+
+.picsBox .base .i3 {
+    background: url("images/spr-1.png") no-repeat -1px -108px;
+}
+
+.picsBox .mask1 {
+    width: 333px;
+    height: 291px;
+    background: url("images/gmk.png");
+    display: none;
+
+}
+
+.picsBox .mask2 {
+    width: 333px;
+    height: 291px;
+    background: url("images/gmk.png");
+    display: none;
+}
+
+.picsBox .mask3 {
+    width: 333px;
+    height: 291px;
+    background: url("images/gmk.png");
+    display: none;
+}
+
+/*主体2结束*/
+
+/*底部开始*/
+.fotterBox {
+    height: 195px;
+}
+
+.fotterBox-top {
+    height: 37px;
+    background-color: #1E2628;
+    text-align: center;
+}
+
+.fotterBox-top span {
+    font-size: 14px;
+    line-height: 37px;
+    color: #4F5F5F;
+}
+
+.fotterBox-bottom {
+    height: 158px;
+    background-color: #242F2F;
+}
+
+.fotterBox-bottom-txt {
+    width: 960px;
+    height: 158px;
+    margin: 0 auto;
+}
+
+.fotterBox-bottom .ico-one {
+    width: 172px;
+    height: 34px;
+    float: left;
+    background: url("images/nav-copy.png") no-repeat -1518px -7px;
+    margin-top: 35px;
+}
+
+.fotterBox-bottom-txt .ico-one .tq {
+    width: 172px;
+    height: 34px;
+    display: block;
+    padding-left: 9999px;
+}
+
+.fotterBox-bottom .ico-two {
+    width: 92px;
+    height: 44px;
+    float: left;
+    background: url("images/nav-copy.png") no-repeat -1696px 0;
+    margin-left: 12px;
+    margin-top: 35px;
+}
+
+.bottom-word {
+    float: left;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.bottom-word a {
+    text-decoration: none;
+    color: #596963;
+}
+
+.bottom-word a:hover {
+    text-decoration: underline;
+}
+
+.bottom-word p {
+    font-size: 12px;
+    color: #596963;
+    line-height: 18px;
+}
+
+.p-two .p-l {
+    float: left;
+}
+
+.p-two .p-r {
+    float: right;
+}
+
+.div {
+    clear: both;
+}
+
+/*底部结束*/
+
+/*二维码开始*/
+.fixedBox {
+    width: 130px;
+    height: 418px;
+}
+
+.fixedBox .fixedBox-top {
+    height: 53px;
+    background-color: #2FC3A3;
+    text-align: center;
+    position: relative;
+}
+
+.fixedBox-top span {
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.fixedBox-top .span-one {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fixedBox-top .app {
+    height: 130px;
+    background-image: url("images/wuxia-app-for-android.png");
+}
+
+.fixedBox-top .txt {
+    height: 181px;
+    margin-top: 5px;
+}
+
+.txt span {
+    display: block;
+}
+
+.txt a {
+    text-decoration: none;
+    color: #C2C2C2;
+    height: 36px;
+    line-height: 36px;
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+}
+
+.txt a:hover {
+    background-color: #363636;
+}
+
+.txt .txt-one {
+    background-color: #2C2C2C;
+}
+
+.txt .txt-two {
+    background-color: #2C2C2C;
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #363636;
+}
+
+.txt .txt-three {
+    background-color: #2C2C2C;
+}
+
+.txt .txt-four {
+    background-color: #2FC3A3;
+}
+
+.txt .txt-four a:hover {
+    background-color: #39C6A7;
+}
+
+.txt-four a {
+    color: white;
+    padding-left: 26px;
+}
+
+.txt .txt-five {
+    background-color: #CFAE69;
+}
+
+.txt-five a {
+    color: white;
+    padding-left: 26px;
+}
+
+.txt .txt-five a:hover {
+    background-color: #D1B270;
+}
+
+.fixedBox-top .goTop {
+    display: block;
+    width: 41px;
+    height: 45px;
+    background: url("images/spr-c.png") no-repeat -2px -228px;
+    margin: 6px auto;
+}
+
+.fixedBox .home {
+    width: 21px;
+    height: 30px;
+    display: block;
+    background: url("images/spr-c.png") no-repeat -2px -80px;
+    position: absolute;
+    top: 297px;
+    left: 20px;
+}
+
+.fixedBox .down {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("images/spr-c.png") no-repeat -95px -80px;
+    position: absolute;
+    top: 333px;
+    left: 20px;
+}
+
+/*二维码结束*/

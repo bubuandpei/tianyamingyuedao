@@ -1,0 +1,51 @@
+/*
+* @Author: Administrator
+* @Date:   2016-04-22 13:32:13
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-04-30 01:10:04
+*/
+@charset "utf-8";
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,table,td,img,div,dl,dt,dd,input,a{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+img{
+	border: none;
+}
+li{
+	list-style:none;
+}
+input,select,textarea{
+	border: none;
+	outline:none;
+	background: none;
+}
+textarea{
+	resize:none;
+}
+a{
+	text-decoration:none;
+	color: #333;
+}
+/*清浮动*/
+.clearfix:after{
+	content:"";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	display:block;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
